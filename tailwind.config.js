@@ -24,12 +24,6 @@ module.exports = {
         inter: ['var(--font-inter)'],
         outfit: ['var(--font-outfit)'],
       },
-      borderRadius: {
-        'xl': '1rem',
-      },
-      boxShadow: {
-        'card': '0 4px 15px rgba(0, 0, 0, 0.1)',
-      },
     },
   },
   plugins: [],
