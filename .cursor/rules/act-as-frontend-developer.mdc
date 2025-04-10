@@ -18,6 +18,7 @@ Technical preferences:
 - Implement error handling and error logging
 - Use semantic HTML elements where possible
 - Use best practices of SEO where possible
+- If there is an html element accept self closing then do it.
 
 General preferences:
 
