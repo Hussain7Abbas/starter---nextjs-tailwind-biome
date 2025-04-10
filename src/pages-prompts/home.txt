@@ -1,0 +1,1168 @@
+🔲 Section: “Explore Exotic Destinations” – Destination Cards Grid
+🔹 Section Header and Description
+Component Type:
+Text block (header and paragraph)
+
+Position and Layout:
+Centered at the top of the section. Followed by filter buttons and a grid of destination cards.
+Vertical stack layout with text-center, margin-bottom before filters: mb-6
+
+Size and Dimensions:
+Header: ~2.25rem (36px), bold, sans-serif
+
+Paragraph: ~1rem, max-w-xl, centered, light gray text
+
+Colors and Styling:
+Header: text-black, bold, clean
+
+Paragraph: text-gray-600, lighter font weight
+
+Text Content:
+Title: "Explore Exotic Destinations"
+
+Description: “Embark on a journey to far-flung corners of the globe…”
+
+🔹 Filter Buttons
+Component Type:
+Pill-style toggle buttons
+
+Position and Layout:
+Centered under the section paragraph
+Laid out horizontally in a flex flex-wrap justify-center with gap-3
+
+Size and Dimensions:
+Each button:
+
+Width: auto
+
+Height: ~36px
+
+Padding: px-4 py-1.5
+
+Border-radius: full
+
+Colors and Styling:
+Background: White (bg-white) for inactive, dark (bg-black text-white) for selected (e.g., "City")
+
+Border: light gray outline
+
+Font: small-medium (text-sm font-medium)
+
+Hover: subtle shadow or background darkening (not shown)
+
+Buttons:
+All Destinations
+
+Beach
+
+Mountain
+
+City (active)
+
+Forest
+
+🔹 Destination Cards (Grid of 6)
+Component Type:
+Card components (destination items)
+
+Position and Layout:
+Grid layout with gap-6, grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+Cards centered inside a container of max-w-[1280px] mx-auto px-4 pt-10
+
+🔹 Individual Card Breakdown (e.g., “Paris, France”)
+Card Container
+Component Type: Card
+
+Size and Dimensions:
+Width: ~300px
+Height: ~400px
+Padding: p-4
+Border-radius: xl (rounded-xl)
+Shadow: shadow-md
+Background: bg-[#f8f9fb] (very light gray)
+
+Image
+Component Type: Destination image
+
+Position: Top of card
+
+Size: w-full h-40, rounded-lg
+
+Image Source: https://picsum.photos or static real city image (e.g., Eiffel Tower)
+
+Style: Cover, rounded, no border
+
+Overlay Tag: Capacity Badge
+Component Type: Tag with icon
+
+Position: Absolutely positioned on image (top-2 left-2)
+
+Size: h-8, rounded-full px-3
+
+Background: Semi-white (bg-white/90)
+
+Icon: @tabler/icons-react → likely IconUsersGroup
+
+Text: “Max 20 People” (varies by card)
+
+Destination Name
+Component Type: Text (title)
+
+Position: Below image, margin-top: mt-4
+
+Text: “Paris, France” (city, country)
+
+Style:
+Font-size: ~1rem
+Font-weight: semibold
+Text color: black
+
+Details Row
+Component Type: Row with 2 info items
+
+Layout: flex justify-between items-center mt-2
+
+Details:
+
+Left: Price → $1,500 / Per person
+
+Icon: @tabler/icons-react (currency or ticket)
+
+Font: text-sm, text-gray-700
+
+Right: Duration → 10 - 15 Days
+
+Icon: calendar or IconCalendar
+
+Font: same style
+
+Button: “View Details”
+Component Type: Button
+
+Position: Centered at the bottom of the card
+
+Size: Full-width, height: ~40px
+
+Style:
+
+Background: White
+
+Border: subtle gray
+
+Border-radius: full
+
+Text: text-black font-medium
+
+Hover: darker border or inner shadow (not shown)
+
+🔹 Cards in View (List)
+Paris, France
+
+$1,500 / Per person, 10-15 Days, Max 20 People
+
+Tokyo, Japan
+
+$2,000 / Per person, 9-12 Days, Max 15 People
+
+New York, USA
+
+$1,800 / Per person, 9-12 Days, Max 20 People
+
+London, UK
+
+$1,600 / Per person, 4-8 Days, Max 25 People
+
+Rome, Italy
+
+$1,400 / Per person, 9-12 Days, Max 16 People
+
+Dubai, UAE
+
+$2,400 / Per person, 9-12 Days, Max 12 People
+
+🟣 Responsiveness
+Grid collapses on small screens (1 column mobile → 2 cols tablet → 3 cols desktop)
+
+Buttons and text scale accordingly
+
+Cards have consistent spacing and padding across breakpoints
+
+Responsive padding and margin are visible throughout
+
+========================================================================
+
+🔲 Section: Journey Solutions
+🔹 Section Title and Description
+Component Type:
+Text content block (title and subtitle)
+
+Position and Layout:
+Top of section, centered
+Layout: vertical flex (flex-col items-center text-center)
+Spacing: mb-12 before card group
+
+Size and Dimensions:
+Title: ~2rem (≈32px), font-bold
+
+Subtitle: ~1rem (≈16px), max-w-md
+
+Colors and Styling:
+Title color: text-black
+
+Subtitle color: text-gray-500
+
+Font: sans-serif
+
+Padding-top: pt-16, bottom: pb-12
+
+Text Content:
+Title: “Journey Solutions”
+
+Subtitle: “We manage planning and booking for your adventure. Our services ensure a smooth travel experience.”
+
+🔹 Cards Grid (3 Services)
+Component Type:
+Service feature cards (with image + text)
+
+Position and Layout:
+Centered horizontal flex (flex justify-center gap-12 flex-wrap)
+Each card in vertical stack: flex-col items-start
+Responsive behavior: Stack vertically on mobile
+
+🔹 Individual Card Breakdown (e.g., “Medical Seaport”)
+✅ Card Image
+Component Type:
+Image (rounded preview)
+
+Position:
+Top of each card
+
+Size and Dimensions:
+Width: ~280px
+Height: ~220px
+Border-radius: lg (≈rounded-[12px])
+object-cover
+
+Source:
+Realistic stock travel images (likely from picsum.photos or uploaded content)
+
+✅ Title Text
+Component Type:
+Header (card label/title)
+
+Position:
+Below image, margin-top: mt-4
+
+Text:
+“Medical Seaport”, “Cultural Tours”, “Honeymoon Planning”
+
+Styling:
+Font-size: ~1.125rem (≈18px)
+Font-weight: semibold
+Color: text-gray-900
+
+✅ Description Paragraph
+Component Type:
+Text (body content)
+
+Position:
+Directly below title
+
+Text (Examples):
+
+“We manage planning and booking for your adventure. Our services ensure a smooth travel experience.”
+
+“We handle the planning and booking for your adventure, ensuring every detail is covered…”
+
+“Let us take care of your adventure planning…”
+
+Styling:
+Font-size: ~0.9375rem (15px)
+Line-height: ~1.6
+Color: text-gray-500
+Max-width: ~280px
+
+🔹 Section Background and Padding
+Background Color:
+#f5f7fb (very light cool gray — possibly bg-[#f1f4fa] or bg-slate-100)
+
+Padding:
+py-20 px-4 or similar for responsiveness
+
+Grid Responsiveness:
+
+Desktop: 3-column layout (flex-row gap-12)
+
+Mobile: Stack vertically (flex-col gap-8 items-center)
+
+Cards remain uniform in width across breakpoints
+
+========================================================================
+
+🔲 Section: Exclusive Deals & Discounts
+🔹 Section Title and Description
+Component Type:
+Text block (title and subtitle)
+
+Position and Layout:
+Centered at the top of the section
+Vertical flex layout (flex-col items-center text-center)
+Bottom margin before main content: mb-16
+
+Size and Dimensions:
+Title: text-3xl md:text-4xl (~32–36px)
+
+Subtitle: text-base (~16px), max-width ~640px
+
+Colors and Styling:
+Title: text-black, font-bold, sans-serif
+
+Subtitle: text-gray-500, normal weight
+
+Text Content:
+Title: “Exclusive Deals & Discounts”
+
+Description: “Unlock exclusive deals and discounts on our curated travel packages…”
+
+🔹 Three Discount Offers (Zigzag Layout)
+Component Type:
+Feature blocks with text and images (alternating layout)
+
+Position and Layout:
+Each block is a 2-column flexbox, alternating between:
+
+Image on right, text on left
+
+Then image on left, text on right
+
+Then image on right, text on left again
+
+Parent layout likely uses flex-col gap-y-12 and lg:flex-row per block.
+
+🔹 Block 1: “30% Discounts for Previous Travelers”
+Image Position: Right side
+
+Image Style:
+
+rounded-xl, object-cover
+
+Width: ~400px, Height: ~260px
+
+Text Block: Left-aligned
+
+Icon: circle with badge or loyalty symbol (@tabler/icons-react, e.g., IconDiscountCheck) inside a blue pill (bg-blue-100 text-blue-600 p-2 rounded-full)
+
+Title: text-xl font-bold, black
+
+Paragraph: text-gray-500 text-sm, max-width ~340px
+
+Content:
+
+Title: “Get 30% Discounts for Previous Travelers”
+
+Description: “Enjoy a 30% discount on exclusive travel packages…”
+
+🔹 Block 2: “24% Discounts for Group Traveler”
+Image Position: Left side
+
+Text Block: Right side
+
+Icon: likely group icon (@tabler/icons-react, e.g., IconUsersGroup)
+
+Structure: Same as block 1 (mirrored)
+
+Content:
+
+Title: “Get 24% Discounts for Group Traveler”
+
+Description: “Take advantage of a fantastic 24% discount…”
+
+🔹 Block 3: “25% Exclusive Discounts for Couples”
+Image Position: Right side
+
+Text Block: Left side
+
+Icon: heart or romantic icon (@tabler/icons-react, e.g., IconHeartHandshake)
+
+Content:
+
+Title: “Get 25% Exclusive Discounts for Couples”
+
+Description: “Enjoy an exclusive 25% discount on specially curated packages…”
+
+🔹 Styling Across All Blocks
+Image Styling:
+rounded-xl corners
+
+Consistent aspect ratio (~3:2)
+
+Responsive (stacked vertical layout on mobile)
+
+Text Styling:
+Headings: font-bold, text-lg to text-xl
+
+Descriptions: text-sm text-gray-600, with max-width set for balance
+
+Icons: w-6 h-6, inside colored circular background
+
+🟣 Responsiveness and Grid Behavior
+On lg+ screens: side-by-side layout (text + image)
+
+On md and below: image stacks above or below text
+
+Gaps: gap-8 or gap-12 between blocks
+
+Padding: px-6 lg:px-16, py-20
+
+========================================================================
+
+🔲 Section: Share Experiences (Testimonials + Gallery)
+🔹 Image Gallery (Top Visual Grid)
+Component Type:
+Image collage (decorative, immersive preview of destinations)
+
+Position and Layout:
+Horizontally centered row with multi-row layout
+
+Likely structured using CSS Grid or Flexbox + Wrap
+
+Margin-bottom: ~4rem before heading
+
+Size and Dimensions:
+Large central image(s): ~w-[400px] h-[280px]
+
+Smaller tiles: ~w-[180px] h-[120px], various orientations
+
+Aspect ratios: preserved using object-cover
+
+Border-radius: rounded-xl or rounded-2xl
+
+Spacing: consistent gap-4 or gap-6
+
+Colors and Styling:
+All images: vibrant, full-color, visually engaging
+
+Rounded corners, subtle drop-shadow (if any)
+
+No hover states shown, used as ambient design element
+
+🔹 Text Heading Area
+Component Type:
+Title and subtitle block (center-aligned)
+
+Position and Layout:
+Center of the section, under gallery
+text-center flex-col justify-center
+
+Text Content:
+Title: 460+ Share Experiences
+
+Number part (460+) is styled in blue (text-blue-500)
+
+Subtitle: “Join 9600 travelers sharing experiences…”
+
+Size and Dimensions:
+Title: text-3xl md:text-4xl font-bold
+
+Subtitle: text-sm md:text-base text-gray-600
+
+Max width: ~560px, centered
+
+Margin-bottom: ~4rem
+
+🔹 Testimonial Carousel / Cards
+Component Type:
+User testimonials (reviews)
+
+Layout and Structure:
+Grid layout with 3 cards in a row (desktop), stacked in smaller viewports
+
+Layout: grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+
+Bottom pagination navigation with arrows (< >)
+
+🔹 Individual Testimonial Card
+Component Type:
+Card
+
+Size and Dimensions:
+Width: ~360px
+
+Padding: p-6
+
+Rounded corners: rounded-xl
+
+Shadow: subtle shadow-sm or border border-gray-200
+
+✅ Star Rating
+Component Type:
+Inline icons (likely from @tabler/icons-react or SVGs)
+
+Count: 5 yellow stars
+
+Style: text-yellow-400, w-4 h-4
+
+Position: Top-left of card
+
+✅ Testimonial Text
+Text: Short paragraph (2-3 lines)
+
+Font: text-sm text-gray-700
+
+Alignment: Left
+
+Spacing: mt-2 mb-4
+
+✅ User Info Section
+Component Type: User profile summary
+
+Structure: flex items-center gap-3
+
+Avatar:
+
+Circular image
+
+Size: w-10 h-10
+
+rounded-full, object-cover
+
+Text Info:
+
+Name: Bold, black (font-medium text-sm)
+
+Title/Role: Smaller, lighter text (text-xs text-gray-500)
+
+✅ Pagination Controls
+Component Type:
+Circle buttons with icons
+
+Position: Centered below testimonials
+
+Size: ~32px x 32px
+
+Style:
+
+Light border (border border-gray-300)
+
+Icon inside (<, >), possibly IconChevronLeft, IconChevronRight
+
+Rounded full (rounded-full), hover effects likely present (not shown)
+
+🟣 Responsiveness and Behavior
+Gallery collapses or repositions on mobile (stack or horizontally scrollable)
+
+Testimonial cards stack on small screens (grid-cols-1)
+
+Text adjusts font-size and padding per breakpoint (md:text-base, text-center)
+
+Pagination is central and remains accessible
+
+
+========================================================================
+
+🔲 Section: “Let's start a journey” – Fullscreen CTA
+🔹 Background
+Component Type:
+Full-width, full-height background image
+
+Position and Layout:
+Covers entire section (likely min-h-screen)
+
+Background image is set via CSS or <img> with absolute positioning
+
+Central alignment for content: flex items-center justify-center flex-col
+
+Layout implies relative parent with z-index stacking for overlays
+
+Size and Dimensions:
+Width: 100vw
+
+Height: 100vh
+
+Image is object-cover, fills frame
+
+Margin/padding: 0 (full-bleed layout)
+
+Image Content:
+Outdoor hiking/climbing scenery with vivid greens and mountain cliffs
+
+Main subject: man walking up hill, back turned
+
+Image likely from picsum.photos or similar full-res photo source
+
+🔹 Main Heading: “Let's start a journey”
+Component Type:
+Centered heading text
+
+Position and Layout:
+Center of the viewport
+
+Positioned above the person’s head
+
+Likely wrapped in container: absolute z-10 text-center
+
+Size and Dimensions:
+Font-size: text-3xl md:text-5xl (~48px at large)
+
+Font-weight: font-bold
+
+Max-width: ~600px (though text is short)
+
+Colors and Styling:
+Text color: white
+
+Font: clean sans-serif
+
+Text-shadow: subtle for readability (may use drop-shadow-lg)
+
+🔹 Call-to-Action Button: “Let’s Go”
+Component Type:
+Button (CTA)
+
+Position and Layout:
+Directly below the heading, centered
+
+Distance between heading and button: ~2rem
+
+Likely layout: mt-6 or mt-8
+
+Size and Dimensions:
+Width: ~120px, Height: ~44px
+
+Rounded: rounded-full
+
+Padding: px-6 py-2
+
+Colors and Styling:
+Background: Transparent or semi-transparent (bg-white/10)
+
+Border: white outline (border border-white)
+
+Text: text-white
+
+Hover: likely includes bg-white text-black transition
+
+Font-size: text-sm font-medium
+
+Attributes (Expected):
+type="button"
+
+aria-label="Start Journey" (if accessibility applied)
+
+🟣 Responsiveness and Accessibility
+Fully responsive: text and button scale down on mobile
+
+text-center, px-4 for padding on small screens
+
+Ensures good contrast with background image
+
+Likely to use aria-label for CTA
+
+
+========================================================================
+
+🔲 Section: Trust & Metrics / Agency Introduction
+🔹 Section Layout and Background
+Component Type:
+Two-column feature section with image + content
+
+Position and Layout:
+Horizontal layout (flex-row or grid-cols-2)
+
+Image on the left, text + metrics on the right
+
+Responsive structure (likely flex-col on mobile)
+
+Padding: py-20 px-8 or similar
+
+Background Color:
+Soft grayish-blue (bg-[#f1f4fa] or bg-slate-100)
+
+🔹 Left Side: Image (Group of People Camping)
+Component Type:
+Illustrative Image
+
+Size and Dimensions:
+Width: ~440px
+
+Height: auto, maintains aspect ratio
+
+Border-radius: rounded-xl (≈ 12px)
+
+Object-fit: cover
+
+Image Content:
+Casual camping scene: three people sharing drinks by a tent
+
+Warm tones, nature backdrop
+
+Reinforces travel, adventure, and connection theme
+
+🔹 Right Side: Text Content + Stats
+✅ Heading: “Your Trusted Travel Partner is Here”
+Component Type:
+Text block (main headline)
+
+Size and Dimensions:
+
+Font-size: ~2rem (text-3xl lg:text-4xl)
+
+Font-weight: bold
+
+Line-height: tight
+
+Margin-bottom: ~1.5rem
+
+Colors and Styling:
+
+Text-color: text-black
+
+Font: sans-serif, clean and modern
+
+✅ Paragraph Description
+Text:
+“We’re more than just a travel agency, we’re your trusted partner in crafting unforgettable journeys…”
+
+Font: text-sm md:text-base
+
+Color: text-gray-600
+
+Width Constraint: max-w-[480px] or prose
+
+✅ Trust Metrics (Three Stats)
+Component Type:
+Statistical indicators with labels
+
+Layout and Structure:
+Horizontal flex (flex gap-8 mt-6 flex-wrap)
+
+Centered vertically under text block
+
+Each Metric Includes:
+Primary Stat (Large Text):
+
+text-blue-500
+
+Font-size: text-xl md:text-2xl
+
+Font-weight: semibold
+
+Label (Caption Below):
+
+text-sm text-gray-500
+
+Center-aligned with stat above
+
+Stats Displayed:
+10k+ → “Happy Travelers”
+
+15+ → “Years of Expertise”
+
+99% → “Positive Reviews”
+
+🟣 Responsiveness and Behavior
+Collapses into vertical stack (flex-col items-center) on smaller viewports
+
+Image appears above or below text based on flex-col-reverse or media query
+
+Text sizes scale with viewport
+
+Padding adjusts (px-4 sm:px-8 lg:px-20)
+
+
+========================================================================
+
+🔲 Section: Blog Highlights / Travel Tips
+🔹 Section Title and Subtitle
+Component Type:
+Title and description block (center-aligned)
+
+Position and Layout:
+Top of section
+
+Vertical stack
+
+Aligned center with max-width container (max-w-[720px] mx-auto)
+
+Text Content:
+Heading: “How to Pack Like a Pro”
+
+Subtitle: “Discover expert packing tips to maximize your luggage space and minimize stress…”
+
+Size and Dimensions:
+Heading: text-3xl md:text-4xl font-bold
+
+Subtitle: text-sm md:text-base text-gray-600
+
+Spacing: mb-12 below title area
+
+🔹 Cards Grid (Blog Article Previews)
+Component Type:
+Card layout (3 article previews)
+
+Layout and Structure:
+Responsive grid:
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+
+Centered container: max-w-7xl mx-auto px-6
+
+Card layout: vertical stack (flex-col)
+
+🔹 Individual Card Breakdown
+✅ Image
+Component Type:
+Blog thumbnail (header image)
+
+Position:
+Top of card
+
+Size and Dimensions:
+Height: ~180px
+Width: 100%
+object-cover, rounded-t-xl
+
+✅ Date Badge
+Component Type:
+Icon badge with text
+
+Icon:
+Likely @tabler/icons-react → IconCalendar
+Icon placed left of date
+
+Style:
+
+Font-size: text-xs
+
+Background: white, rounded-pill (rounded-full)
+
+Padding: px-3 py-1
+
+Border: light gray outline
+
+Positioned inside/overlapping the image bottom left
+
+Examples:
+
+“Oct 20, 2024”
+
+“Nov 15, 2024”
+
+“Mar 5, 2024”
+
+✅ Article Title
+Component Type:
+Header (card title)
+
+Text Content:
+
+“The Ultimate Packing List for Every Traveler”
+
+“Top 7 Budget Destinations are Friendly for 2025”
+
+“Top 10 Hidden Gems You Can Explore in 2024”
+
+Styling:
+Font-size: text-lg, font-semibold, text-gray-900
+Margin: mt-4 mb-2
+
+✅ Description Paragraph
+Component Type:
+Text snippet
+
+Style:
+
+text-sm text-gray-500
+
+Line-height: relaxed
+
+Max-width: ~280px
+
+Examples:
+
+“Never ever forget a travel essential again…”
+
+“Explore stunning destinations…”
+
+“Discover breathtaking off-the-beaten-path…”
+
+✅ Call-to-Action Button: “Learn More”
+Component Type:
+Button (link-style)
+
+Position:
+Bottom of card
+mt-6 or mt-auto
+
+Style:
+
+Full width
+
+Background: white, with gray outline
+
+Padding: py-2 px-4
+
+Rounded: rounded-full
+
+Text: text-black font-medium text-sm
+
+Behavior:
+Likely links to full blog article
+
+🔹 Card Container Styling
+Background: bg-[#f8f9fb] or very light gray
+
+Border-radius: rounded-xl
+
+Box-shadow: soft shadow or border
+
+Padding: p-4 md:p-6
+
+Transition effects on hover: not visible but likely present
+
+🟣 Responsiveness and Breakpoints
+Single column on mobile
+
+Two columns on tablet
+
+Three columns on desktop
+
+Image height likely set with aspect-[3/2] or h-[180px]
+
+Card height flexible with content
+
+
+========================================================================
+
+🔲 Section: Final Call-To-Action (Modal-Like Card with Background)
+🔹 Section Container
+Component Type:
+Centered card section with background image and content overlay
+
+Position and Layout:
+Centered horizontally within a padded container
+
+Width: max-w-5xl, likely w-full px-6 lg:px-0
+
+Layout: flex items-center justify-center py-20
+
+Background behind this card section: soft gray (bg-[#f1f4fa])
+
+Card Styling:
+Background: Full image (object-cover) with gradient overlay (subtle)
+
+Border-radius: rounded-[32px] (extra-rounded corners)
+
+Shadow: Soft shadow (possibly shadow-xl)
+
+Padding: py-16 px-10 for desktop, px-6 on mobile
+
+Size: ~900px wide max, height auto based on content
+
+🔹 Background Image
+Component Type:
+Hero background within the card
+
+Content:
+Scenic sunset at beach with a prominent rock formation
+
+Used as aesthetic enhancer for CTA
+
+Styling:
+background-image: url(...) via style or Tailwind bg-[url(...)]
+
+bg-cover, bg-center, rounded-xl
+
+Overlay: dark gradient or transparent black filter for text contrast
+
+🔹 Main Text Content
+✅ Headline: “Are You Ready to Start Your Adventure?”
+Component Type:
+Main heading (centered)
+
+Style:
+
+Font-size: text-2xl md:text-4xl
+
+Color: text-white
+
+Font-weight: font-semibold
+
+Text-align: text-center
+
+Position:
+Centered in the card’s upper-middle section
+Margin-bottom: mb-4
+
+✅ Subheading Paragraph
+Text:
+“Don’t wait any longer. Start planning your dream vacation today…”
+
+Font-size: text-sm md:text-base
+
+Text color: text-white/90
+
+Line height: leading-relaxed
+
+Text-align: Centered
+
+Max-width: ~600px
+
+Margin-bottom: mb-6
+
+🔹 CTA Button: “Join a Moment”
+Component Type:
+Primary CTA button
+
+Position:
+Centered under text
+mt-4, inside a flex container (justify-center)
+
+Styling:
+Color: Gradient blue (bg-blue-500 hover:bg-blue-600)
+
+Text: text-white, font-semibold, text-sm
+
+Padding: px-6 py-2
+
+Rounded: rounded-full
+
+Button Type: type="button"
+
+Behavior (Expected):
+Click opens contact form or scrolls to contact section
+
+Accessibility: should include aria-label="Join a Moment"
+
+🟣 Responsiveness
+Scales beautifully on mobile (padding reduced, font shrinks)
+
+Button and text remain center-aligned
+
+Rounded corners adapt fluidly
+
+Image remains object-cover to avoid distortion
+
+
+========================================================================
+
+🔲 Section: Footer – Multi-Column Layout with Info, Links, and Branding
+🔹 Overall Footer Container
+Component Type:
+Footer
+
+Layout and Positioning:
+Full-width horizontal layout (grid or flex)
+
+4-column desktop layout (grid-cols-4 lg:grid-cols-5)
+
+Padding: py-16 px-6 md:px-12
+
+Background: Solid dark (bg-[#111] or bg-neutral-900)
+
+Text color: text-white/80 (subdued)
+
+🔹 Column 1: Menu Navigation
+Title:
+“Manu Bar” (likely typo; should be “Menu Bar”)
+
+Links (Unordered List):
+Home
+
+About Us
+
+Tours
+
+Blog
+
+Styling:
+Heading: text-white font-semibold mb-4
+
+Links: text-sm text-white/70 hover:text-white transition
+
+Spacing: space-y-2
+
+🔹 Column 2: Contact Info
+Title:
+“Contact Info”
+
+Content:
+Address: 2464 Royal Ln. Mesa, New Jersey 45463
+
+Phone: (629) 555-0129
+
+Email: travely@pixproo.com
+
+Styling:
+Font: sans-serif
+
+Text color: text-white/70
+
+Line spacing: leading-6, text-sm
+
+🔹 Column 3: Social Media
+Title:
+“Social Media”
+
+Links:
+Facebook
+
+Instagram
+
+YouTube
+
+X (Twitter)
+
+Styling:
+Similar to other columns
+
+Could include social icons (not shown visually here)
+
+🔹 Column 4: Branding Text + Social Message
+Logo Text:
+“travely”
+
+Gradient text effect: possibly bg-gradient-to-r from-blue-400 to-rose-300 text-transparent bg-clip-text
+
+Font: serif or display font, text-xl font-semibold
+
+Brand Message:
+“Stay connected with us on social media... exciting updates, insightful content, and the latest news from our industry.”
+
+Text Style:
+Paragraph: text-sm text-white/60 max-w-xs
+
+Leading: leading-relaxed
+
+🔹 Bottom Links and Legal
+Layout:
+Separate horizontal row
+
+Items:
+
+Privacy Policy
+
+Terms and Conditions
+
+Copyright
+
+Alignment:
+Grid or flex-row justify-between
+
+Mobile behavior: likely stacks in center with text-center
+
+Text Example:
+“© Copyright 2024, All Rights Reserved by Pixproo”
+
+Styling:
+Font-size: text-xs
+
+Color: text-white/50
+
+🟣 Responsiveness and Behavior
+Columns collapse to 1 or 2 on small screens (grid-cols-2 or grid-cols-1)
+
+Padding becomes py-12 px-4
+
+Text centers on smaller viewports
+
+Hover states expected for links (hover:text-white)
